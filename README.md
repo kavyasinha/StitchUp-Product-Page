@@ -1,6 +1,6 @@
 # StitchUp - Premium E-commerce Product Page
 
-![StitchUp Logo](./assets/1.png)
+![StitchUp Logo](./assets/2.png)
 
 ## 📋 Project Overview
 
@@ -8,7 +8,7 @@ StitchUp is a modern, feature-rich e-commerce product page designed to showcase 
 
 ### 🌟 [Live Demo](https://your-demo-link-here.com)
 
-![Product Page Screenshot](./assets/2.png)
+![Product Page Screenshot](./assets/1.png)
 
 ## ✨ Features
 
