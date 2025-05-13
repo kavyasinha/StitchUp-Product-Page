@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Jacket - StitchUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">STITCH UP</div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#">Home</a> / <a href="#">Outerwear</a> / <span>Premium Winter Jacket</span>
+            </div>
+
+            <div class="product-main">
+                <!-- 1. Product Gallery -->
+                <div class="product-gallery">
+                    <div class="gallery-main">
+                        <img id="main-image" src="assets/image copy.png" alt="Premium Winter Jacket">
+                        <div class="image-zoom-overlay"></div>
+                    </div>
+                    <div class="gallery-thumbnails">
+                        <!-- <button class="thumbnail-scroll-btn prev-btn">&lt;</button> -->
+                        <div class="thumbnails-container">
+                            <img src="assets/image copy.png" alt="Premium Winter Jacket - Front" class="thumbnail active" data-src="https://placehold.co/600x800">
+                            <img src="assets/image.png" alt="Premium Winter Jacket - Side" class="thumbnail" data-src="https://placehold.co/600x800?text=Image+2">
+                            <img src="assets/image copy 2.png" alt="Premium Winter Jacket - Back" class="thumbnail" data-src="https://placehold.co/600x800?text=Image+3">
+                            <img src="assets/image copy 3.png" alt="Premium Winter Jacket - Detail" class="thumbnail" data-src="https://placehold.co/600x800?text=Image+4">
+                            <!-- <img src="https://placehold.co/600x800?text=Image+5" alt="Premium Winter Jacket - Worn" class="thumbnail" data-src="https://placehold.co/600x800?text=Image+5"> -->
+                            <!-- <img src="https://placehold.co/600x800?text=Image+6" alt="Premium Winter Jacket - Close-up" class="thumbnail" data-src="https://placehold.co/600x800?text=Image+6"> -->
+                        </div>
+                        <!-- <button class="thumbnail-scroll-btn next-btn">&gt;</button> -->
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="product-details">
+                    <h1 class="product-title">Premium Winter Jacket</h1>
+                    <div class="product-price">
+                        <span class="current-price">&#8377;2999</span>
+                        <span class="original-price">&#8377;3999</span>
+                        <span class="discount-badge">25% OFF</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="reviews-count">(42 reviews)</span>
+                    </div>
+
+                    <!-- 3. Product Variants -->
+                    <div class="product-variants">
+                        <div class="variant-group">
+                            <label>Color: <span id="selected-color">Navy Blue</span></label>
+                            <div class="color-options">
+                                <button class="color-swatch active" data-color="Navy Blue" style="background-color: #1A2D40;"></button>
+                                <button class="color-swatch" data-color="Forest Green" style="background-color: #2C5F2D;"></button>
+                                <button class="color-swatch" data-color="Burgundy" style="background-color: #800020;"></button>
+                                <button class="color-swatch" data-color="Charcoal" style="background-color: #36454F;"></button>
+                            </div>
+                            <button id="compare-colors-btn" class="text-button">Compare Colors</button>
+                        </div>
+
+                        <div class="variant-group">
+                            <label>Size: <span id="selected-size">M</span></label>
+                            <div class="size-options">
+                                <button class="size-option" data-size="XS">XS</button>
+                                <button class="size-option" data-size="S">S</button>
+                                <button class="size-option active" data-size="M">M</button>
+                                <button class="size-option" data-size="L">L</button>
+                                <button class="size-option" data-size="XL">XL</button>
+                                <button class="size-option" data-size="XXL">XXL</button>
+                            </div>
+                            <button id="size-chart-btn" class="text-button">Size Chart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">−</button>
+                            <input type="number" value="1" min="1" class="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+
+                    <div class="product-meta">
+                        <!--<p><strong>SKU:</strong> WJ-NB-001</p>-->
+                        <p><strong>Availability:</strong> <span class="in-stock">In Stock</span></p>
+                        <p><strong>Shipping:</strong> Free shipping on orders over &#8377;99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Product Info Tabs -->
+            <div class="product-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="product-info">Product Information</button>
+                    <button class="tab-btn" data-tab="shipping">Shipping Details</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="description">
+                        <h3>Product Description</h3>
+                        <p>Our Premium Winter Jacket combines style with ultimate functionality. Designed to keep you warm in temperatures as low as -20°C while maintaining a sleek, urban aesthetic.</p>
+                        <p>The outer shell is crafted from water-resistant material, while the interior features our innovative thermal lining technology that traps body heat without adding bulk.</p>
+                        <ul>
+                            <li>Water-resistant outer shell</li>
+                            <li>Thermal heat-retention lining</li>
+                            <li>Adjustable hood with faux-fur trim</li>
+                            <li>Six pockets (4 external, 2 internal)</li>
+                            <li>Ribbed cuffs to keep out cold air</li>
+                            <li>Two-way front zipper with storm flap</li>
+                        </ul>
+                    </div>
+                    <div class="tab-panel" id="product-info">
+                        <h3>Product Information</h3>
+                        <table class="product-specs">
+                            <tr>
+                                <th>Material</th>
+                                <td>Outer: 85% Polyester, 15% Cotton<br>Lining: 100% Polyester<br>Fill: 90% Duck Down, 10% Feathers</td>
+                            </tr>
+                            <tr>
+                                <th>Care Instructions</th>
+                                <td>Machine wash cold, gentle cycle. Tumble dry low. Do not bleach. Do not iron.</td>
+                            </tr>
+                            <tr>
+                                <th>Fill Power</th>
+                                <td>700+</td>
+                            </tr>
+                            <tr>
+                                <th>Weight</th>
+                                <td>950g (Size M)</td>
+                            </tr>
+                            <tr>
+                                <th>Country of Origin</th>
+                                <td>India</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-panel" id="shipping">
+                        <h3>Shipping Details</h3>
+                        <p>We offer the following shipping options:</p>
+                        <ul>
+                            <li><strong>Standard Shipping (3-5 business days):</strong> Free on orders over &#8377;99</li>
+                            <li><strong>Express Shipping (1-2 business days):</strong> &#8377;199</li>
+                            <li><strong>Same Day Delivery (select areas):</strong> &#8377;299</li>
+                        </ul>
+                        <p>International shipping is available to select countries. Customs fees and import duties may apply.</p>
+                        <h4>Returns & Exchanges</h4>
+                        <p>Unworn items with tags attached can be returned within 30 days of purchase. Return shipping is free for exchanges.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Product Bundle Suggestion -->
+            <div class="product-bundle">
+                <h2>Complete the Look</h2>
+                <div class="bundle-products">
+                    <div class="bundle-product main-product">
+                        <img src="assets/image copy 3.png" alt="Premium Winter Jacket">
+                        <h3>Premium Winter Jacket</h3>
+                        <p class="price">&#8377;2999</p>
+                    </div>
+                    <div class="plus-sign">+</div>
+                    <div class="bundle-product">
+                        <img src="assets/image copy 4.png" alt="Winter Hat">
+                        <h3>Winter Knit Hat</h3>
+                        <p class="price">&#8377;999</p>
+                    </div>
+                    <div class="plus-sign">+</div>
+                    <div class="bundle-product">
+                        <img src="assets/image copy 5.png" alt="Winter Gloves">
+                        <h3>Insulated Gloves</h3>
+                        <p class="price">&#8377;499</p>
+                    </div>
+                    <div class="equals-sign">=</div>
+                    <div class="bundle-total">
+                        <h3>Bundle Price</h3>
+                        <p class="original-total">&#8377;4499</p>
+                        <p class="discount-total">&#8377;3373</p>
+                        <p class="save-text">Save &#8377;1126</p>
+                        <button class="add-bundle-btn">Add Bundle to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Pair Well With Section -->
+            <div class="complementary-products">
+                <h2>Also Consider</h2>
+                <div class="complementary-carousel">
+                    <button class="carousel-btn prev">&lt;</button>
+                    <div class="carousel-container">
+                        <div class="product-card">
+                            <img src="assets/image copy 6.png" alt="Winter Scarf">
+                            <h3>Merino Wool Scarf</h3>
+                            <p class="price">&#8377;399</p>
+                            <button class="quick-add">+ Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="assets/image copy 7.png" alt="Winter Beanie">
+                            <h3>Thermal Beanie</h3>
+                            <p class="price">&#8377;299</p>
+                            <button class="quick-add">+ Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="assets/image copy 8.png" alt="Winter Boots">
+                            <h3>Waterproof Snow Boots</h3>
+                            <p class="price">&#8377;1129</p>
+                            <button class="quick-add">+ Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="assets/image copy 10.png" alt="Thermal Socks">
+                            <h3>Thermal Wool Socks</h3>
+                            <p class="price">&#8377;450</p>
+                            <button class="quick-add">+ Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="assets/image copy 11.png" alt="Insulated Thermos">
+                            <h3>Insulated Travel Thermos</h3>
+                            <p class="price">&#8377;1299</p>
+                            <button class="quick-add">+ Add to Cart</button>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next">&gt;</button>
+                </div>
+            </div>
+
+            <!-- 8. Related Products -->
+            <div class="related-products">
+                <h2>You May Also Like</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-badge new">New</div>
+                        <img src="assets/image copy 9.png" alt="Lightweight Puffer Jacket">
+                        <h3>Lightweight Puffer Jacket</h3>
+                        <p class="price">&#8377;1999</p>
+                        <button class="quick-add">+ Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-badge popular">Popular</div>
+                        <img src="assets/image copy 12.png" alt="Waterproof Rain Jacket">
+                        <h3>Waterproof Rain Jacket</h3>
+                        <p class="price">&#8377;899</p>
+                        <button class="quick-add">+ Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/image copy 13.png" alt="Fleece-Lined Hoodie">
+                        <h3>Fleece-Lined Hoodie</h3>
+                        <p class="price">&#8377;3950</p>
+                        <button class="quick-add">+ Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-badge sale">Sale</div>
+                        <img src="assets/image copy 14.png" alt="Insulated Vest">
+                        <h3>Insulated Vest</h3>
+                        <p class="price"><span class="original">&#8377;799</span> &#8377;599</p>
+                        <button class="quick-add">+ Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Sale Items</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Stay Connected</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">PT</a>
+                    </div>
+                    <div class="newsletter">
+                        <p>Subscribe for updates & exclusive offers</p>
+                        <form>
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit">→</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Premium Outerwear. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 2. Size Chart Modal -->
+    <div id="size-chart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Size Chart</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <table class="size-chart-table">
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Chest (in)</th>
+                            <th>Waist (in)</th>
+                            <th>Hips (in)</th>
+                            <th>Length (in)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>XS</td>
+                            <td>34-36</td>
+                            <td>28-30</td>
+                            <td>34-36</td>
+                            <td>26.5</td>
+                        </tr>
+                        <tr>
+                            <td>S</td>
+                            <td>36-38</td>
+                            <td>30-32</td>
+                            <td>36-38</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>38-40</td>
+                            <td>32-34</td>
+                            <td>38-40</td>
+                            <td>27.5</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>40-42</td>
+                            <td>34-36</td>
+                            <td>40-42</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>42-44</td>
+                            <td>36-38</td>
+                            <td>42-44</td>
+                            <td>28.5</td>
+                        </tr>
+                        <tr>
+                            <td>XXL</td>
+                            <td>44-46</td>
+                            <td>38-40</td>
+                            <td>44-46</td>
+                            <td>29</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="size-chart-info">
+                    <h3>How to Measure</h3>
+                    <p><strong>Chest:</strong> Measure around the fullest part of your chest, keeping the tape horizontal.</p>
+                    <p><strong>Waist:</strong> Measure around your natural waistline, keeping the tape comfortably loose.</p>
+                    <p><strong>Hips:</strong> Measure around the fullest part of your hips.</p>
+                    <p><strong>Length:</strong> Measure from the top of the shoulder to the bottom hem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Compare Colors Modal -->
+    <div id="compare-colors-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Compare Colors</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="color-compare-container">
+                    <div class="color-compare-item" data-color="Navy Blue">
+                        <div class="compare-color-swatch" style="background-color: #1A2D40;"></div>
+                        <p class="compare-color-name">Navy Blue</p>
+                        <label class="compare-checkbox-container">
+                            <input type="checkbox" class="compare-checkbox" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="color-compare-item" data-color="Forest Green">
+                        <div class="compare-color-swatch" style="background-color: #2C5F2D;"></div>
+                        <p class="compare-color-name">Forest Green</p>
+                        <label class="compare-checkbox-container">
+                            <input type="checkbox" class="compare-checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="color-compare-item" data-color="Burgundy">
+                        <div class="compare-color-swatch" style="background-color: #800020;"></div>
+                        <p class="compare-color-name">Burgundy</p>
+                        <label class="compare-checkbox-container">
+                            <input type="checkbox" class="compare-checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="color-compare-item" data-color="Charcoal">
+                        <div class="compare-color-swatch" style="background-color: #36454F;"></div>
+                        <p class="compare-color-name">Charcoal</p>
+                        <label class="compare-checkbox-container">
+                            <input type="checkbox" class="compare-checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="color-comparison-view">
+                    <h3>Selected Colors</h3>
+                    <div class="selected-colors-container">
+                        <div class="selected-color active" data-color="Navy Blue">
+                            <div class="large-swatch" style="background-color: #1A2D40;"></div>
+                            <p>Navy Blue</p>
+                        </div>
+                        <div class="selected-color" data-color="Forest Green">
+                            <div class="large-swatch" style="background-color: #2C5F2D;"></div>
+                            <p>Forest Green</p>
+                        </div>
+                        <div class="selected-color" data-color="Burgundy">
+                            <div class="large-swatch" style="background-color: #800020;"></div>
+                            <p>Burgundy</p>
+                        </div>
+                        <div class="selected-color" data-color="Charcoal">
+                            <div class="large-swatch" style="background-color: #36454F;"></div>
+                            <p>Charcoal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="modal-overlay"></div>
+
+    <script src="script.js"></script>
+ 
+</body>
+</html>
