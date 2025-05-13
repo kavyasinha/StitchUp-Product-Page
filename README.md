@@ -6,7 +6,7 @@
 
 StitchUp is a modern, feature-rich e-commerce product page designed to showcase premium clothing items. This project implements a comprehensive product detail page with multiple interactive features to enhance the shopping experience.
 
-### 🌟 [Live Demo](https://your-demo-link-here.com)
+### 🌟 [Live Demo](https://kavyasinha.github.io/StitchUp-Product-Page/)
 
 ![Product Page Screenshot](./assets/1.png)
 
