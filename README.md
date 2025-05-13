@@ -137,5 +137,5 @@ For any questions or suggestions, please open an issue or contact [kavyasinha620
 
 **Created with ❤️ by Kavya Sinha**
 ```
-© 2025 Premium Outerwear. All rights reserved.
+© 2025 StitchUp. All rights reserved.
 ```
